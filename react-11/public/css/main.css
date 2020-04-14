@@ -1,0 +1,266 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.branco { 
+	color: white;
+}
+
+header {
+	background-image: url(../img/capa-madmax2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding: 20px;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 12px;
+	font-weight: bold;
+	justify-items: center;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+nav div ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 13px;
+	justify-items: center;
+}
+
+nav div ul li:hover{
+	color: #E4BC35;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user img {
+	border-radius: 50%;
+	height: 45px;
+	margin-right: 15px;
+
+}
+
+h1 {
+	font-size: 4em;
+	margin-top: 140px;
+	margin-bottom: 0;
+	padding-right: 20%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 12%;
+	align-items: baseline;
+}
+
+.genero-header{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 13px;
+	justify-items: center;
+}
+
+.genero-header li:hover{
+	color: #E4BC35;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.botao {
+	background-color: #E5BE35;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 18%;
+	border-radius: 30px;
+	margin: 20px 0px;
+	padding: 18px;
+
+}
+
+.botao:hover, .botao:focus, .botao:active {
+	background-color: rgb(196, 162, 43);
+	color: #000000;
+	transition-duration: 0.3s;
+}
+  
+
+.botao a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+}
+
+.data {
+	color:rgb(247, 247, 0);
+	margin: 0;
+}
+
+main {
+	width: 100%;
+	background-color: #F2F2F2;
+}
+
+.opcoes {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.opcoes ul li{
+	margin: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color:#E4BC39;
+
+}
+
+.cards {
+	padding: 0 100px;
+}
+
+.linha-cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 16px 4px;
+	width: 230px;
+	height: 450px;
+	border-radius: 8px;
+	overflow: hidden;	/*pesquisar*/
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-text{
+	background-color: white;
+	padding: 0px 15px;
+	height: 25%;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.titulo {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+
+.card img {
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 75%;
+}
+
+.card img:hover{
+	filter: brightness(60%);
+	transition-duration: 0.3s;
+}
+
+.card a {
+	display:none;
+}
+
+.card a:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .nav li a .glyphicon {
+	display:none;
+}
+.nav li a:hover .glyphicon {
+	display: inline;
+} */
+
+.nota{
+	font-size: 20px;
+}
+
+.like-nota {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: bold;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.like-nota i{
+	color: rgb(204, 204, 204);
+}
+
+.like-nota i:hover {
+	color: red;
+	transition-duration: 0.3s;
+  }
+
+.card a {
+	text-decoration: none;
+	color:#EBC854;
+	font-weight: 500;
+}
+
+.card a:hover{
+	text-decoration: underline;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+	margin: 0 10%;
+}
+
+footer div i {
+	color: rgb(204, 204, 204);
+	margin: 0 20px;
+}
+
+.fa-twitter:hover {
+	color: #56ACEE;
+}
+
+.fa-facebook-official:hover{
+	color: #3B5998;
+}
+
+.fa-instagram:hover{
+	color: #DC4B76;
+}
