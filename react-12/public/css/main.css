@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FAFAFA;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	'nav nav nav'
+	'. stories .'
+	'. cards .' ;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.nav {
+	background-color: #FFFFFF;
+	border-bottom: solid;
+	border-width: thin;
+	border-color: #DBDBDB;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: '. nav__items .' ;
+	grid-area: nav;
+	
+}
+
+.nav__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px;
+	grid-area: nav__items;
+}
+
+.nav__logo {
+	border-radius: 0%;
+	height: 40px;
+}
+
+.stories {
+	display: flex;
+	grid-area: stories;
+}
+
+.stories__users {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+.stories__bg {
+	background: #FAFAFA;
+	border-radius: 50%;
+	width: 5.4em;
+	height: 5.4em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-right: 1em;
+	margin-left: 0em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stories__user--active {
+	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+}
+
+.stories__user {
+	width: 5em;
+	height: 5em;
+	border: #FAFAFA;
+	border-style: solid;
+}
+
+.cards {
+	background-color: #FAFAFA;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-area: cards;
+}
+
+.cards__item {
+	border: solid;
+	border-width: thin;
+	border-color: #DBDBDB;
+	border-radius: 0.5em;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.cards__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FFFFFF;
+	padding: 0.5em;
+}
+
+.cards__user {
+	display: flex;
+	align-items: center;
+}
+
+.cards__user__img {
+	width: 3em;
+	height: 3em;
+	margin-right: 0.6em;
+}
+
+.cards__user__name {
+	font-weight: bold;
+}
+
+.cards__photo {
+	border-radius: 0%;
+	border-bottom: solid;
+	width: 100%;
+}
+
+.cards__interaction {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.6em;
+}
+
+.cards__heart {
+	margin-right: 0.2em;
+}
+
+.cards__likes {
+	display: flex;
+	align-items: center;
+	background-color: #F2F2F2;
+	padding: 0.7em;
+}
+
+.cards__likes__img {
+	height: 2em;
+	width: 2em;
+	margin-right: 0.5em;
+}
+
+.others__people {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+
