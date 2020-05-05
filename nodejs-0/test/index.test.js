@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { fibonacci, isFibonnaci } = require('../src');
+const { fibonacci, isFibonnaci } = require('../src/fibonacci');
 
 describe('fibonacci', () => {
     it('should get fibonacci sequence until it passes 350', () => {

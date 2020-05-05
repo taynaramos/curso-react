@@ -16,7 +16,7 @@ const fibonacci = () => {
     return resposta; 
   }
 
-  console.log(fibonacci());
+//   console.log(fibonacci());
 
 const prompt = require("prompt-sync")();
 const number = parseInt(prompt("Escolha um número: "));
@@ -35,10 +35,10 @@ function isFibonnaci (number) {
 
 }
 
-console.log(isFibonnaci(number));
+isFibonnaci(number);
 
-//   module.exports = {
-//      Fibonacci: fibonacci,
-//      Isfibonnaci: fibonacci
-//   };
+  module.exports = {
+     Fibonacci: fibonacci,
+     IsFibonnaci: isFibonnaci
+  };
 	

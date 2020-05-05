@@ -2,4 +2,4 @@
 
 const fibonacci = require("./fibonacci");
 
-const isFibonnaci = require("./isFibonnaci");
+const isFibonnaci = require("./fibonacci");
